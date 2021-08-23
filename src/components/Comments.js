@@ -7,7 +7,7 @@ import NewComment from "./NewComment";
 const Comments = () => {
   const { comments } = useSelector((state) => state.posts);
 
-  return (
+  return comments && (
     <Box boxShadow="lg" w="100%" p={[3, 6]} bg="white">
       <Heading size="lg" mx={[2, 3, 4]} mb={[3,4]}>
         Comments

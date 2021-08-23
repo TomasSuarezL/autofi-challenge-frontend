@@ -28,6 +28,8 @@ yarn start
 
 For new comments, they aren't persisted anywhere.
 
+When refreshing on Post Details page, it redirects to Posts List page (no state rehydration).
+
 Data fetching isn't optimized (no cache, unnecesary fetchs).
 
 Project structure and design isn't optimized to scale.

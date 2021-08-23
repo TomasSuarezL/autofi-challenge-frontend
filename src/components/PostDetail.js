@@ -19,7 +19,7 @@ const PostDetail = () => {
 
   if (!posts) {
     history.push("/");
-    return <div/>
+    return false
   }
 
   return (
