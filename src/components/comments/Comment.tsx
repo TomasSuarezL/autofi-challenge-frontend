@@ -1,8 +1,9 @@
 import { Avatar } from "@chakra-ui/avatar";
 import { Stack, VStack, Text, Heading } from "@chakra-ui/layout";
 import React from "react";
+import { Comment } from "./Comment.type";
 
-const Comment = ({ comment }) => {
+const CommentData: React.FC<{ comment: Comment }> = ({ comment }) => {
   return (
     <Stack direction={["column", "column", "row"]} w="100%">
       <VStack flex={"1"}>
@@ -11,10 +12,10 @@ const Comment = ({ comment }) => {
       </VStack>
       <VStack flex={"2"} align="start">
         <Heading size="sm">{comment.name}</Heading>
-        <Text >{comment.body}</Text>
+        <Text>{comment.body}</Text>
       </VStack>
     </Stack>
   );
 };
 
-export default Comment;
+export default CommentData;
